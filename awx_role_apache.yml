@@ -1,0 +1,9 @@
+---
+- name: Install Apache and Upload Web Pages
+  hosts: "{{ MYHOSTS}}"  
+  become: yes
+
+  roles:
+    - { role: roles/deploy_apache_web, when: ansible_system == 'Linux' }
+ #   - deploy_db
+ #   - configure XXX

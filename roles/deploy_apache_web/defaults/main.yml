@@ -1,0 +1,6 @@
+---
+# defaults file for deploy_apache_web
+#source_folder: ../MyWebSite2
+destin_folder: /var/www/html
+MYHOSTS: all
+owner: OWNER is ISHUNIN
